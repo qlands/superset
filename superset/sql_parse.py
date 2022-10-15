@@ -27,7 +27,6 @@ from sqlparse.sql import (
     Identifier,
     IdentifierList,
     Parenthesis,
-    remove_quotes,
     Token,
     TokenList,
     Where,
@@ -73,6 +72,20 @@ sqlparse.keywords.SQL_REGEX.insert(
 class CtasMethod(str, Enum):
     TABLE = "TABLE"
     VIEW = "VIEW"
+
+
+def _remove_quotes(val):
+    """
+    Removes surrounding quotes and backticks from strings.
+
+    :param val: String that may have quotes and/or backticks
+    :return: String without quotes and backticks
+    """
+    if val is None:
+        return
+    if val[0] in ['"', "'", "`"] and val[0] == val[-1]:
+        val = val[1:-1]
+    return val
 
 
 def _extract_limit_from_query(statement: TokenList) -> Optional[int]:
@@ -318,7 +331,7 @@ class ParsedQuery:
             and all(imt(token, t=[Name, String]) for token in tokens[::2])
             and all(imt(token, m=(Punctuation, ".")) for token in tokens[1::2])
         ):
-            return Table(*[remove_quotes(token.value) for token in tokens[::-2]])
+            return Table(*[_remove_quotes(token.value) for token in tokens[::-2]])
 
         return None
 
