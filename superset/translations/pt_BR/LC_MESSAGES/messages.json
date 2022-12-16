@@ -4,8 +4,8 @@
     "superset": {
       "": {
         "domain": "superset",
-        "plural_forms": "nplurals=2; plural=(n != 1);",
-        "lang": "pt-br"
+        "plural_forms": "nplurals=2; plural=(n != 1)",
+        "lang": "pt_br"
       },
       "\n                This filter was inherited from the dashboard's context.\n                It won't be saved when saving the chart.\n              ": [
         "\nEste filtro foi herdado do contexto do painel.\n Não será salvo ao salvar o gráfico."
@@ -17,6 +17,8 @@
       " Set the opacity to 0 if you do not want to override the color specified in the GeoJSON": [
         " Ajuste a opacidade para 0 se você não quiser sobrepor-se à cor especificada no GeoJSON"
       ],
+      " a dashboard OR ": [" um painel OU "],
+      " a new one": [" uma nova"],
       " expression which needs to adhere to the ": [
         " expressão que precisa ser aderente a"
       ],
@@ -1894,6 +1896,9 @@
       "Enter a new title for the tab": ["Digite um novo título para a aba"],
       "Enter duration in seconds": ["Digite a duração em segundos"],
       "Enter fullscreen": ["Entrar na tela inteira"],
+      "Enter your FormShare's Superset user and password below": [
+        "Digite seu nome de usuário FormShare Superset abaixo"
+      ],
       "Entity": ["Entidade"],
       "Entity ID": ["Identificação da entidade"],
       "Equal Date Sizes": ["Tamanho igual das datas"],
@@ -2139,6 +2144,7 @@
       "Form data not found in cache, reverting to dataset metadata.": [
         "Os dados do formulário não são armazenados em cache, revertendo para os metadados do conjunto de dados."
       ],
+      "FormShare's Superset User": ["Usuário FormShare Superset"],
       "Formattable": ["Formatável"],
       "Formatted CSV attached in email": ["CSV formatado como anexo de e-mail"],
       "Formatted date": ["Data com formato"],
@@ -2255,6 +2261,7 @@
       "If table exists do one of the following: Fail (do nothing), Replace (drop and recreate table) or Append (insert data).": [
         "Se a tabela existe faça um dos seguintes: Falhar (não faz nada), Substituir (apaga e recria a tabela) ou Inserir (insere dados no fim)."
       ],
+      "If you are not already a user, please register": [""],
       "If you wish to specify a different target column than the original column, it can be entered here": [
         "Se você quiser especificar uma coluna de destino diferente da coluna original, você pode inseri-la aqui"
       ],
@@ -3805,6 +3812,7 @@
       "Shows the composition of a dataset by segmenting a given rectangle as smaller rectangles with areas proportional to their value or contribution to the whole. Those rectangles may also, in turn, be further segmented hierarchically.": [
         "Exibe a composição de um conjunto de dados segmentando um determinado retângulo em retângulos menores com áreas proporcionais ao seu valor ou contribuição para o conjunto. Estes retângulos também podem ser ainda mais segmentados hierarquicamente."
       ],
+      "Sign In": ["Entrar"],
       "Significance Level": ["Nível de significância"],
       "Simple": ["Simples"],
       "Simple ad-hoc metrics are not enabled for this dataset": [
@@ -4312,6 +4320,9 @@
       ],
       "The size of the square cell, in pixels": [
         "O tamanho da célula quadrada, em pixels"
+      ],
+      "The submitted URL is not considered safe, only use URLs with the same domain as Superset.": [
+        "A URL apresentada não é considerada segura, use somente URLs com o mesmo domínio da Superset."
       ],
       "The submitted payload has the incorrect format.": [
         "Os dados enviados estão no formato errado."
@@ -5486,6 +5497,7 @@
       "click here": ["clique aqui"],
       "column": ["coluna"],
       "count": ["contar"],
+      "create": ["Criar"],
       "create a ": ["criar um"],
       "create a new chart": ["criar um novo gráfico"],
       "css": ["CSS"],
@@ -5631,13 +5643,7 @@
       "week": ["semana"],
       "year": ["ano"],
       "yellow": ["amarelo"],
-      "zoom area": ["Maximizar a área"],
-      " a dashboard OR ": [" um painel OU "],
-      " a new one": [" uma nova"],
-      "The submitted URL is not considered safe, only use URLs with the same domain as Superset.": [
-        "A URL apresentada não é considerada segura, use somente URLs com o mesmo domínio da Superset."
-      ],
-      "create": ["Criar"]
+      "zoom area": ["Maximizar a área"]
     }
   }
 }
